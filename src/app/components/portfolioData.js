@@ -20,8 +20,8 @@ import {
       location: "Canada",
       email: "dawarwaqar71@gmail.com",
       phone: "587-969-9120",
-      photo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/8f0509eda_display-modified.png",
-      resumeUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/78e7bef53_DawarWaqarResume.pdf",
+      photo: "/images/dp.png",
+      resumeUrl: "https://drive.google.com/uc?export=download&id=12I2JWuK7ivrSKqndV2vKSgfDJxIEauiB",
       linkedin: "https://www.linkedin.com/in/dawar-waqar/",
       github: "https://github.com/DawarWaqar",
       medium: "https://medium.com/@dawarwaqar71",
@@ -34,7 +34,7 @@ import {
       {
         company: "Tecsys Inc.",
         url: "https://www.tecsys.com/",
-        logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/c66fe409f_tecsyslogo.png",
+        logo: "/images/tecsys_logo.png",
         position: "Full Stack Python Developer (Co-Op)",
         team: "AI & Innovation Team",
         duration: "Jan 2025 – Apr 2025",
@@ -45,7 +45,7 @@ import {
         company2: "Market Page",
         company2Description: "(Early-Stage Fintech Startup)",
         url: "https://psopk.com/",
-        logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/359fc552b_pakistan-state-oil-seeklogo.png",
+        logo: "/images/pso_logo.png",
         position: "Lead Software Engineer (Independent Contractor)",
         duration: "Jan 2023 – Jan 2024",
         location: "Remote",
@@ -53,7 +53,7 @@ import {
       {
         company: "Cowlar Design Studio (Y Combinator W17)",
         url: "https://cowlardesignstudio.com/",
-        logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/a9a412f3b_cowlar_design_logo.jpeg",
+        logo: "/images/cowlar_logo.jpeg",
         position: "Full Stack Developer",
         team: "Factory Automation Team",
         duration: "Jun 2022 – Dec 2022",
@@ -62,7 +62,7 @@ import {
       {
         company: "LUMS",
         url: "https://lums.edu.pk/",
-        logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/25d2c960b_lums-university-seeklogo.png",
+        logo: "/images/lums_logo.png",
         position: "Full-time Teaching Assistant",
         team: "Advanced Programming Course",
         duration: "Jan 2022 - Jun 2022",
@@ -100,7 +100,7 @@ import {
         degree: "Master of Applied Computing",
         school: "University of Windsor",
         url: "https://www.uwindsor.ca/",
-        logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/2934e40a2_uwindsor-new-logo.jpg",
+        logo: "/images/uwindsor_logo.jpg",
         duration: "Jan 2024 – Apr 2025",
         location: "Canada",
         gpa: "3.9/4.0",
@@ -110,7 +110,7 @@ import {
         degree: "BS Computer Science",
         school: "LUMS",
         url: "https://lums.edu.pk/",
-        logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/25d2c960b_lums-university-seeklogo.png",
+        logo: "/images/lums_logo.png",
         duration: "Aug 2018 – Jun 2022",
         location: "Pakistan"
       }
@@ -124,12 +124,13 @@ import {
         repoUrl: "https://github.com/DawarWaqar/everybody-eats-backend"
       },
       {
-        name: "Distributed Fault-Tolerant Key-Value Storage Service",
-        tech: ["Go", "Raft"],
+        name: "Distributed File System",
+        tech: ["C", "Linux", "Sockets"],
         year: "2024",
-        description: "Developed a distributed key–value store using the Raft consensus algorithm—synchronizing Goroutines, implementing RPC-based operations, orchestrating leader elections, replicating logs, and ensuring system fault tolerance.",
-        repoUrl: "https://github.com/dawarwaqar71"
+        description: "Created a distributed file system using 3 servers, enabling seamless file management with client-server communication only across a specialized server.",
+        repoUrl: "https://github.com/DawarWaqar/distributed-file-system"
       },
+     
       {
         name: "Predictive Credit-Scoring Engine",
         tech: ["Python", "LightGBM", "XGBoost", "CatBoost", "Scikit-learn", "Pandas"],
@@ -142,15 +143,16 @@ import {
         tech: ["Java", "TypeScript", "Spring Boot", "React"],
         year: "2024",
         description: "Built a tool that scrapes and aggregates property listings from multiple sites, applies user preferences, and displays personalized recommendations.",
-        repoUrl: "https://github.com/dawarwaqar71"
+        repoUrl: "https://github.com/DawarWaqar"
       },
       {
-        name: "Distributed File System",
-        tech: ["C", "Linux", "Sockets"],
+        name: "Distributed Fault-Tolerant Key-Value Storage Service",
+        tech: ["Go", "Raft"],
         year: "2024",
-        description: "Created a distributed file system using 3 servers, enabling seamless file management with client-server communication only across a specialized server.",
-        repoUrl: "https://github.com/DawarWaqar/distributed-file-system"
+        description: "Developed a distributed key–value store using the Raft consensus algorithm—synchronizing Goroutines, implementing RPC-based operations, orchestrating leader elections, replicating logs, and ensuring system fault tolerance.",
+        repoUrl: "https://github.com/DawarWaqar"
       }
+
     ],
     certificates: [
       { name: "Hackathon Winner (Royal Canadian Navy)", url: "https://www.uwindsor.ca/dailynews/2024-12-03/hackathon-win-grants-students-permission-board-navy-ship" },

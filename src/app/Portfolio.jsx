@@ -1,16 +1,16 @@
+"use client";
 import React, { useState, useEffect } from "react";
-import { portfolioData } from "../components/portfolio/portfolioData.js";
-
-import Navigation from "../components/portfolio/Navigation";
-import Hero from "../components/portfolio/Hero";
-import Experience from "../components/portfolio/Experience";
-import Skills from "../components/portfolio/Skills";
-import Education from "../components/portfolio/Education";
-import Projects from "../components/portfolio/Projects";
-import Certificates from "../components/portfolio/Certificates";
-import Interests from "../components/portfolio/Interests";
-import Contact from "../components/portfolio/Contact";
-import Footer from "../components/portfolio/Footer";
+import { portfolioData } from "./components/portfolioData";
+import Navigation from "./components/Navigation";
+import Hero from "./components/Hero";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import Education from "./components/Education";
+import Projects from "./components/Projects";
+import Certificates from "./components/Certificates";
+import Interests from "./components/Interests";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function Portfolio() {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
