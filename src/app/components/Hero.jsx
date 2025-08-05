@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import {
   Github,
   Linkedin,
-  Download,
+  FileText,
   MapPin,
   Briefcase,
   FolderOpen,
@@ -106,11 +106,12 @@ export default function Hero({ personal, titles, currentTitleIndex }) {
 
             <a
               href={personal.resumeUrl}
-              download="Dawar Waqar Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="primary-button inline-flex items-center gap-2 px-8 py-3 font-semibold"
             >
-              <Download className="w-5 h-5" />
-              Download Resume
+              <FileText className="w-5 h-5" />
+              Resume
             </a>
           </div>
 
