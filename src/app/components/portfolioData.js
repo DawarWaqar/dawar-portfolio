@@ -21,7 +21,7 @@ import {
       email: "dawarwaqar71@gmail.com",
       phone: "587-969-9120",
       photo: "/images/dp.jpg",
-      resumeUrl: "https://drive.google.com/file/d/12I2JWuK7ivrSKqndV2vKSgfDJxIEauiB/view?usp=drive_link",
+      resumeUrl: "/resume.pdf",
       linkedin: "https://www.linkedin.com/in/dawar-waqar/",
       github: "https://github.com/DawarWaqar",
       medium: "https://medium.com/@dawarwaqar71",
