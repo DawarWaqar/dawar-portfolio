@@ -101,7 +101,7 @@ import {
         school: "University of Windsor",
         url: "https://www.uwindsor.ca/",
         logo: "/images/uwindsor_logo.jpg",
-        duration: "Jan 2024 – Apr 2025",
+        duration: "2024 – 2025",
         location: "Canada",
         gpa: "3.9/4.0",
         courses: ["Networking & Data Security", "Natural Language Processing", "Systems Programming", "Distributed Systems", "Applied AI", "Algorithms", "Databases"]
@@ -111,7 +111,7 @@ import {
         school: "LUMS",
         url: "https://lums.edu.pk/",
         logo: "/images/lums_logo.png",
-        duration: "Aug 2018 – Jun 2022",
+        duration: "2018 – 2022",
         location: "Pakistan"
       }
     ],
