@@ -8,7 +8,7 @@ import {
     Brain,
     Laptop,
     Plane,
-    Puzzle,
+    Crown,
     Coffee
   } from "lucide-react";
   
@@ -16,18 +16,18 @@ import {
     personal: {
       name: "Dawar Waqar",
       titles: ["Software Engineer", "Full Stack Engineer", "Cloud Engineer", "AI Engineer"],
-      tagline: "Cloud | Software Development | AI Workflow Integration | Master of Applied Computing",
+      tagline: "Software Development | AI Integration  | Cloud",
       location: "Canada",
       email: "dawarwaqar71@gmail.com",
       phone: "587-969-9120",
-      photo: "/images/dp.png",
+      photo: "/images/dp.jpg",
       resumeUrl: "https://drive.google.com/file/d/12I2JWuK7ivrSKqndV2vKSgfDJxIEauiB/view?usp=drive_link",
       linkedin: "https://www.linkedin.com/in/dawar-waqar/",
       github: "https://github.com/DawarWaqar",
       medium: "https://medium.com/@dawarwaqar71",
       stats: {
         experience: "2+ Years of Experience",
-        projects: "20+ Projects"
+        projects: "30+ Projects"
       }
     },
     experience: [
@@ -35,7 +35,7 @@ import {
         company: "Tecsys Inc.",
         url: "https://www.tecsys.com/",
         logo: "/images/tecsys_logo.png",
-        position: "Full Stack Python Developer (Co-Op)",
+        position: "Full Stack Python Intern (Co-Op)",
         team: "AI & Innovation Team",
         duration: "Jan 2025 – Apr 2025",
         location: "Montreal, CA",
@@ -166,7 +166,7 @@ import {
     interests: [
       { name: "LeetCode", icon: Laptop },
       { name: "Travelling", icon: Plane },
-      { name: "Chess", icon: Puzzle },
+      { name: "Chess", icon: Crown },
       { name: "Coffee", icon: Coffee }
     ]
   };

@@ -13,7 +13,10 @@ export default function Education({ data }) {
         </div>
         <div className="space-y-6">
           {data.map((edu, index) => (
-            <div key={index} className="bg-gray-800/50 p-6 rounded-lg">
+            <div
+              key={index}
+              className="bg-gray-800/60 p-6 rounded-lg border border-gray-700/50"
+            >
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
                 <div className="flex flex-col sm:flex-row items-start gap-4 flex-1">
                   {edu.logo && (

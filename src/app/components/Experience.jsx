@@ -15,15 +15,10 @@ export default function Experience({ data }) {
         <div className="space-y-8">
           {data.map((exp, index) => (
             <div key={index} className="relative">
-              {index === 0 && (
-                <div className="hidden md:block absolute w-3 h-3 bg-teal-400 rounded-full -left-1.5 top-1.5 border-2 border-gray-800"></div>
-              )}
-              {index > 0 && (
-                <div className="hidden md:block absolute w-3 h-3 bg-gray-700 rounded-full -left-1.5 top-1.5 border-2 border-gray-800"></div>
-              )}
+              <div className="hidden md:block absolute w-3 h-3 bg-teal-400 rounded-full -left-1.5 top-16 border-2 border-gray-800"></div>
 
               <div className="md:pl-8 md:border-l-2 md:border-gray-700">
-                <div className="bg-gray-800/30 p-4 md:p-6 rounded-lg">
+                <div className="bg-gray-800/50 p-4 md:p-6 rounded-lg border border-gray-700/50">
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
                     <div className="flex flex-col sm:flex-row sm:items-start gap-4 flex-1">
                       {exp.logo && (

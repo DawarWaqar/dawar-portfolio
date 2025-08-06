@@ -15,7 +15,7 @@ export default function Projects({ data }) {
           {data.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-800/50 p-6 rounded-lg flex flex-col hover:transform hover:-translate-y-2 transition-transform duration-300"
+              className="bg-gray-800/60 p-6 rounded-lg border border-gray-700/50 flex flex-col hover:transform hover:-translate-y-2 transition-transform duration-300"
             >
               <h3 className="text-lg font-bold text-white mb-2">
                 {project.name}

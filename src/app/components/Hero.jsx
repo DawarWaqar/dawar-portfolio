@@ -1,23 +1,22 @@
-import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import {
   Github,
   Linkedin,
-  FileText,
   MapPin,
   Briefcase,
   FolderOpen,
+  FileText,
 } from "lucide-react";
 
 export default function Hero({ personal, titles, currentTitleIndex }) {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center pt-24 md:pt-20 px-4 relative section-glow"
+      className="min-h-screen flex items-center justify-center pt-24 pb-12 md:pt-20 px-4 relative section-glow"
     >
-      <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-5 gap-8 items-center">
+      <div className="max-w-6xl mx-auto w-full">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-5 gap-8 items-center">
           <div className="md:col-span-3 text-center md:text-left">
             <motion.h1
               className="text-4xl md:text-6xl font-bold text-white mb-4"
@@ -28,7 +27,7 @@ export default function Hero({ personal, titles, currentTitleIndex }) {
               {personal.name}
             </motion.h1>
 
-            <div className="h-16 mb-4">
+            <div className="mb-4">
               <AnimatePresence mode="wait">
                 <motion.h2
                   key={currentTitleIndex}
@@ -43,19 +42,19 @@ export default function Hero({ personal, titles, currentTitleIndex }) {
               </AnimatePresence>
             </div>
 
-            <div className="flex flex-col items-center md:flex-row md:items-start md:flex-wrap gap-2 mb-6 md:justify-start">
+            <div className="flex flex-wrap gap-2 mb-6 justify-center md:justify-start">
               {personal.tagline.split("|").map((item, index) => (
                 <Badge
                   key={index}
                   variant="secondary"
-                  className="text-sm bg-teal-900/50 text-teal-300 border-teal-700 px-3 py-1 whitespace-nowrap"
+                  className="text-xs md:text-sm bg-teal-900/50 text-teal-300 border-teal-700 px-3 py-1 whitespace-nowrap"
                 >
                   {item.trim()}
                 </Badge>
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-x-6 gap-y-4 mb-6 justify-center md:justify-start text-base">
+            <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 justify-center md:justify-start text-sm md:text-base">
               <div className="flex items-center gap-2 text-gray-400">
                 <MapPin className="w-4 h-4 text-teal-400" />
                 {personal.location}
@@ -108,17 +107,17 @@ export default function Hero({ personal, titles, currentTitleIndex }) {
               href={personal.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="primary-button inline-flex items-center gap-2 px-8 py-3 font-semibold"
+              className="primary-button inline-flex items-center gap-1.5 px-5 py-2 text-base font-medium rounded-md"
             >
-              <FileText className="w-5 h-5" />
+              <FileText className="w-4 h-4" />
               Resume
             </a>
           </div>
 
           <div className="md:col-span-2 flex justify-center items-center">
-            <div className="relative transform md:translate-x-8">
+            <div className="relative transform lg:translate-x-8">
               <div className="absolute -inset-1 bg-gradient-to-r from-teal-400 to-blue-500 rounded-full blur opacity-75"></div>
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-gray-800">
+              <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-gray-800 bg-gray-900">
                 <img
                   src={personal.photo}
                   alt={personal.name}

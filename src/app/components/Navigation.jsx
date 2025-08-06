@@ -25,7 +25,7 @@ export default function Navigation({ name, activeSection, scrollToSection }) {
 
   return (
     <nav className="fixed top-0 w-full z-50">
-      <div className="glass-card p-4 w-full">
+      <div className="w-full bg-gray-800/50 p-4 backdrop-blur-lg border-b border-white/10">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <div className="text-xl font-bold text-teal-400">DW</div>
 

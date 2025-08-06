@@ -77,6 +77,12 @@ export default function Portfolio() {
       }}
     >
       <style jsx global>{`
+        html,
+        body {
+          background-color: #111827;
+          width: 100%;
+          overflow-x: hidden;
+        }
         .glass-card {
           background: rgba(31, 41, 55, 0.5);
           backdrop-filter: blur(10px);

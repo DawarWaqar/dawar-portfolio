@@ -19,7 +19,7 @@ export default function Certificates({ data }) {
               href={cert.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-800/50 p-4 rounded-lg flex items-center gap-3 hover:bg-gray-700/70 transition-colors"
+              className="bg-gray-800/60 p-4 rounded-lg border border-gray-700/50 flex items-center gap-3 hover:bg-gray-700/70 transition-colors"
             >
               <Award className="w-5 h-5 text-yellow-400 flex-shrink-0" />
               <span className="text-gray-300 font-medium flex-1">
