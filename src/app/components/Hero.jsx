@@ -103,7 +103,7 @@ export default function Hero({ personal, titles, currentTitleIndex }) {
               </a>
             </div>
 
-            <a
+            {/* <a
               href={personal.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -111,7 +111,7 @@ export default function Hero({ personal, titles, currentTitleIndex }) {
             >
               <FileText className="w-4 h-4" />
               Resume
-            </a>
+            </a> */}
           </div>
 
           <div className="md:col-span-2 flex justify-center items-center">
