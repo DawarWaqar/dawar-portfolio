@@ -42,17 +42,19 @@ export default function Education({ data }) {
                     >
                       {edu.school} <ExternalLink className="w-4 h-4" />
                     </a>
+                    {edu.specialization && (
+                      <p className="text-sm font-medium text-gray-400 mt-1">
+                        Specialization: {edu.specialization}
+                      </p>
+                    )}
                     {edu.gpa && (
-                      <p className="text-gray-400 mt-1">
-                        <span className="text-slate-100 font-bold">GPA:</span>{" "}
-                        <span className="text-slate-100 font-bold">
-                          {edu.gpa}
-                        </span>
+                      <p className="text-sm font-medium text-gray-400 mt-1">
+                        GPA: {edu.gpa}
                       </p>
                     )}
                     {edu.courses && (
                       <div className="mt-3">
-                        <p className="text-sm font-medium text-gray-300 mb-2">
+                        <p className="text-sm font-medium text-gray-400 mb-2">
                           Relevant Coursework:
                         </p>
                         <div className="flex flex-wrap gap-2">
