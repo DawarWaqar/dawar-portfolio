@@ -1,7 +1,15 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 import SnakeGame from "./SnakeGame"; // Updated import from TicTacToeGame to SnakeGame
+import ScrollDownIndicator from "./ScrollDownIndicator";
 import {
   Github,
   Linkedin,
@@ -135,10 +143,17 @@ export default function Hero({ personal, titles, currentTitleIndex }) {
               <Dialog>
                 <DialogTrigger asChild>
                   <button className="primary-button px-4 py-2 font-semibold text-white text-sm">
-                    Play Snake First 😛
+                    I'll Check the Portfolio Later
                   </button>
                 </DialogTrigger>
                 <DialogContent className="max-w-md mx-auto bg-gray-900 border border-gray-700">
+                  <DialogHeader>
+                    <DialogTitle className="sr-only">Snake Game</DialogTitle>
+                    <DialogDescription className="sr-only">
+                      An interactive snake game. Use the arrow keys or on-screen
+                      buttons to play.
+                    </DialogDescription>
+                  </DialogHeader>
                   <style jsx>{`
                     [data-radix-dialog-content] button[aria-label*="Close"] {
                       color: white !important;
@@ -167,6 +182,7 @@ export default function Hero({ personal, titles, currentTitleIndex }) {
           </div>
         </div>
       </div>
+      <ScrollDownIndicator />
     </section>
   );
 }

@@ -45,16 +45,6 @@ export default function SnakeGame() {
     }
   };
 
-  const playGameOverSound = () => {
-    try {
-      const audio = new Audio("/sound/mixkit-sad-game-over-trombone-471.wav");
-      audio.volume = 0.1;
-      audio.play();
-    } catch (e) {
-      console.log("Game over audio not supported");
-    }
-  };
-
   const generateFood = useCallback((currentSnake) => {
     let newFood;
     do {
@@ -100,7 +90,6 @@ export default function SnakeGame() {
 
       if (checkCollision(head, newSnake)) {
         setGameStatus("gameOver");
-        playGameOverSound();
         return currentSnake;
       }
 
@@ -258,42 +247,38 @@ export default function SnakeGame() {
 
       {/* Mobile Controls */}
       <div className="block sm:hidden">
-        <div className="grid grid-cols-3 gap-2 w-32 mb-4">
+        <div className="grid grid-cols-3 gap-3 w-48 mb-4">
           <div></div>
           <Button
-            size="sm"
             variant="outline"
             onClick={() => handleDirectionChange({ x: 0, y: -1 })}
-            className="bg-gray-700 border-gray-600 text-white hover:bg-gray-600"
+            className="bg-gray-700 border-gray-600 text-white hover:bg-gray-600 h-16 w-16 flex items-center justify-center"
           >
-            <ArrowUp className="w-4 h-4" />
+            <ArrowUp className="w-8 h-8" />
           </Button>
           <div></div>
           <Button
-            size="sm"
             variant="outline"
             onClick={() => handleDirectionChange({ x: -1, y: 0 })}
-            className="bg-gray-700 border-gray-600 text-white hover:bg-gray-600"
+            className="bg-gray-700 border-gray-600 text-white hover:bg-gray-600 h-16 w-16 flex items-center justify-center"
           >
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="w-8 h-8" />
           </Button>
           <div></div>
           <Button
-            size="sm"
             variant="outline"
             onClick={() => handleDirectionChange({ x: 1, y: 0 })}
-            className="bg-gray-700 border-gray-600 text-white hover:bg-gray-600"
+            className="bg-gray-700 border-gray-600 text-white hover:bg-gray-600 h-16 w-16 flex items-center justify-center"
           >
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-8 h-8" />
           </Button>
           <div></div>
           <Button
-            size="sm"
             variant="outline"
             onClick={() => handleDirectionChange({ x: 0, y: 1 })}
-            className="bg-gray-700 border-gray-600 text-white hover:bg-gray-600"
+            className="bg-gray-700 border-gray-600 text-white hover:bg-gray-600 h-16 w-16 flex items-center justify-center"
           >
-            <ArrowDown className="w-4 h-4" />
+            <ArrowDown className="w-8 h-8" />
           </Button>
           <div></div>
         </div>
@@ -309,9 +294,10 @@ export default function SnakeGame() {
 
         <Button
           onClick={resetGame}
-          className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-2 rounded-lg flex items-center gap-2 transition-colors"
+          size="sm"
+          className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-1 rounded-lg flex items-center gap-2 transition-colors text-sm"
         >
-          <RotateCcw className="w-4 h-4" />
+          <RotateCcw className="w-3 h-3" />
           New Game
         </Button>
       </div>
