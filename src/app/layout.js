@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Dawar Waqar",
-  description: "Dawar Waqar's Portfolio - Software Development Engineer",
+  description: "I am a passionate Software Engineer currently involved in Software Development, AI, Data, and Cloud. With extensive experience building scalable web applications, machine learning solutions, and distributed systems, I specialize in creating innovative technology solutions that solve real-world problems. My portfolio showcases diverse projects ranging from food rescue platforms connecting restaurants with NGOs to predictive analytics engines and automated cloud management tools. Based in Canada, I bring a unique blend of technical expertise and creative problem-solving to every project I undertake.",
 };
 
 export default function RootLayout({ children }) {
