@@ -45,7 +45,7 @@ export const portfolioData = {
       company2Description: "(Early-Stage Fintech Startup)",
       url: "https://psopk.com/",
       logo: "/images/pso_logo.png",
-      position: "Lead Software Engineer (Independent Contractor)",
+      position: "Lead Software Engineer",
       duration: "Jan 2023 – Jan 2024",
       location: "Lahore, PK & Amsterdam, NL (Remote)",
     },
@@ -111,7 +111,6 @@ export const portfolioData = {
       duration: "2024 – 2025",
       location: "Canada",
       gpa: "3.9/4.0",
-      specialization: "Applied Artificial Intelligence",
       courses: ["Networking & Data Security", "Natural Language Processing", "Systems Programming", "Distributed Systems", "Applied AI", "Algorithms", "Databases"]
     },
     {
