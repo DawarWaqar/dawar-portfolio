@@ -16,7 +16,7 @@ export const portfolioData = {
   personal: {
     name: "Dawar Waqar",
     titles: ["Software Engineer", "Full Stack Engineer", "AI Engineer"],
-    tagline: "Software Development | Cloud | AI",
+    // tagline: "Software Development | Cloud | AI",
     location: "Canada",
     email: "dawarwaqar71@gmail.com",
     phone: "587-969-9120",
@@ -41,13 +41,21 @@ export const portfolioData = {
     },
     {
       company: "Pakistan State Oil",
-      company2: "Market Page",
-      company2Description: "(Early-Stage Fintech Startup)",
+      // company2Description: "(Early-Stage Fintech Startup)",
       url: "https://psopk.com/",
       logo: "/images/pso_logo.png",
       position: "Lead Software Engineer",
-      duration: "Jan 2023 – Jan 2024",
-      location: "Lahore, PK & Amsterdam, NL (Remote)",
+      duration: "July 2023 – Jan 2024",
+      location: "Lahore, PK",
+      team: "Largest Energy Company of Pakistan",
+    },
+    {
+      company: "Market Page",
+      logo: "/images/mp_logo.jpeg",
+      position: "Founding Full Stack Engineer",
+      duration: "Jan 2023 – Jun 2023",
+      location: "Amsterdam, NL",
+      team: "Early-Stage Fintech Startup",
     },
     {
       company: "Cowlar Design Studio (Y Combinator W17)",
@@ -74,6 +82,7 @@ export const portfolioData = {
       position: "JavaScript Developer Intern",
       duration: "Jul 2021 – Aug 2021",
       location: "Lahore, PK (Remote)",
+      team: "Game Development Studio",
     }
   ],
   skills: {
@@ -110,14 +119,15 @@ export const portfolioData = {
       logo: "/images/uwindsor_logo.jpg",
       duration: "2024 – 2025",
       location: "Canada",
-      gpa: "3.9/4.0",
-      courses: ["Networking & Data Security", "Natural Language Processing", "Systems Programming", "Distributed Systems", "Applied AI", "Algorithms", "Databases"]
+      grade: "A",
+      courses: ["Networking & Data Security", "Natural Language Processing", "Advanced Systems Programming", "Internet Applications & Distributed Systems", "Applied Artificial Intelligence", "Advanced Computing Concepts", "Advanced Database Topics", "Advanced Software Engineering"]
     },
     {
       degree: "BS Computer Science",
       school: "LUMS",
       url: "https://lums.edu.pk/",
       logo: "/images/lums_logo.png",
+      grade: "Graduated with Merit",
       duration: "2018 – 2022",
       location: "Pakistan"
     }
@@ -147,12 +157,12 @@ export const portfolioData = {
       description: "Developed a novel ROUGE-L weighted voting approach, ensembling multiple base text-summarization algorithms to create higher-quality news summaries, achieving a 20% improvement in the top ROUGE score.",
       repoUrl: "https://github.com/DawarWaqar/evaluation-ensemble-text-summarization"
     },
-    {
-      name: "Automated Backup Bash Script",
-      tech: ["Bash"],
-      description: "Automated the process of backing up files by writing a Bash script that runs continuously in the background, performing full, incremental, and differential backups at regular intervals, ensuring 99.9% data availability.",
-      repoUrl: "https://github.com/DawarWaqar/BackUpBashScript"
-    },
+    // {
+    //   name: "Automated Backup Bash Script",
+    //   tech: ["Bash"],
+    //   description: "Automated the process of backing up files by writing a Bash script that runs continuously in the background, performing full, incremental, and differential backups at regular intervals, ensuring 99.9% data availability.",
+    //   repoUrl: "https://github.com/DawarWaqar/BackUpBashScript"
+    // },
     {
       name: "Real Estate Marketplace",
       tech: ["Java", "TypeScript", "Spring Boot", "React"],
@@ -165,12 +175,12 @@ export const portfolioData = {
       description: "Built a web platform connecting restaurants and NGOs to redistribute surplus food—implementing role-based access, Redis-backed real-time listings, and AWS SNS powered notifications to reduce waste and combat hunger.",
       repoUrl: "https://github.com/DawarWaqar/everybody-eats-backend"
     },
-    {
-      name: "Ludo Board Game",
-      tech: ["JavaScript", "WebSocket", "CSS"],
-      description: "A popular and funfilled multiplayer board game from the Indian subcontinent.",
-      repoUrl: "https://github.com/DawarWaqar/Ludo"
-    }
+    // {
+    //   name: "Ludo Board Game",
+    //   tech: ["JavaScript", "WebSocket", "CSS"],
+    //   description: "A popular and funfilled multiplayer board game from the Indian subcontinent.",
+    //   repoUrl: "https://github.com/DawarWaqar/Ludo"
+    // }
   ],
   certificates: [
     { name: "Hackathon Winner (Royal Canadian Navy)", url: "https://www.uwindsor.ca/dailynews/2024-12-03/hackathon-win-grants-students-permission-board-navy-ship" },

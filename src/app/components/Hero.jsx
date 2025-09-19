@@ -52,7 +52,7 @@ export default function Hero({ personal, titles, currentTitleIndex }) {
               </AnimatePresence>
             </div>
 
-            <div className="flex flex-wrap gap-2 mb-6 justify-center md:justify-start">
+            {/* <div className="flex flex-wrap gap-2 mb-6 justify-center md:justify-start">
               {personal.tagline.split("|").map((item, index) => (
                 <Badge
                   key={index}
@@ -62,7 +62,7 @@ export default function Hero({ personal, titles, currentTitleIndex }) {
                   {item.trim()}
                 </Badge>
               ))}
-            </div>
+            </div> */}
 
             <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 justify-center md:justify-start text-sm md:text-base">
               <div className="flex items-center gap-2 text-gray-400">

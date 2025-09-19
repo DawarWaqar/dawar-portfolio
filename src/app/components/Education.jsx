@@ -23,11 +23,7 @@ export default function Education({ data }) {
                     <img
                       src={edu.logo}
                       alt={`${edu.school} logo`}
-                      className={`w-12 h-12 rounded-lg bg-white p-1 ${
-                        edu.degree === "Master of Applied Computing"
-                          ? "object-cover"
-                          : "object-contain"
-                      }`}
+                      className={`w-12 h-12 rounded-lg bg-white p-1 object-cover`}
                     />
                   )}
                   <div className="flex-1">
@@ -47,9 +43,9 @@ export default function Education({ data }) {
                         Specialization: {edu.specialization}
                       </p>
                     )}
-                    {edu.gpa && (
+                    {edu.grade && (
                       <p className="text-sm font-medium text-gray-400 mt-1">
-                        GPA: {edu.gpa}
+                        Grade: {edu.grade}
                       </p>
                     )}
                     {edu.courses && (
