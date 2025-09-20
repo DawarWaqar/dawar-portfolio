@@ -81,7 +81,7 @@ export const portfolioData = {
       logo: "/images/osa_logo.jpeg",
       position: "JavaScript Developer Intern",
       duration: "Jul 2021 – Aug 2021",
-      location: "Lahore, PK (Remote)",
+      location: "Lahore, PK",
       team: "Game Development Studio",
     }
   ],
